@@ -1,22 +1,61 @@
- /* Typewriter animation */
- @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  @keyframes blink {
-    from, to { border-color: transparent }
-    50% { border-color: black; }
-  }
-  .typewriter h1 {
-    overflow: hidden;
-    border-right: 3px solid black;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
-  }
+/* Typewriter animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 3px solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+}
 
-  /* Hover animation */
-  .hover-move:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
+/* Hover animation */
+.hover-move:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #0288d1;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Button and card styles */
+button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  background-color: #0288d1;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #01579b;
+  transform: translateY(-3px);
+}
